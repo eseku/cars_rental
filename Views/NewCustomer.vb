@@ -24,15 +24,14 @@ Public Class NewCustomer
         firstnamesignup.Clear()
         lastnamesignup.Clear()
         emailsignup.Clear()
-        passwordsignup.Clear()
     End Sub
 
     Private Sub Addcustomer_Click(sender As Object, e As EventArgs) Handles addcustomer.Click
-        Dim customer As Customer = New Customer(firstnamesignup.Text, lastnamesignup.Text, emailsignup.Text, passwordsignup.Text)
+        Dim customer As Customer = New Customer(firstnamesignup.Text, lastnamesignup.Text, emailsignup.Text)
 
         ds = New DataSet
-        Adapter = New SqlDataAdapter("insert into tbl_customers ( firstname, lastname, email, password) values ('" & customer.FirstName & "',
-                                    '" & customer.LastName & "', '" & customer.Email & "', '" & customer.Password & "')", connection)
+        Adapter = New SqlDataAdapter("insert into tbl_customers ( firstname, lastname, email ) values ('" & customer.FirstName & "', '" & customer.LastName & "', '" & customer.Email & "')", connection)
+
 
         Try
             Adapter.Fill(ds, "tbl_customers")
@@ -74,13 +73,12 @@ Public Class NewCustomer
         firstnamesignup.Text = CustomerDataGrid.Item(1, i).Value.ToString()
         lastnamesignup.Text = CustomerDataGrid.Item(2, i).Value.ToString()
         emailsignup.Text = CustomerDataGrid.Item(3, i).Value.ToString()
-        passwordsignup.Text = CustomerDataGrid.Item(4, i).Value.ToString()
     End Sub
 
     Private Sub Updatecustomer_Click(sender As Object, e As EventArgs) Handles updatecustomer.Click
         ds = New DataSet
         Adapter = New SqlDataAdapter("update tbl_customers set firstname='" & firstnamesignup.Text & "', lastname='" & lastnamesignup.Text & "',
-                                    email='" & emailsignup.Text & "', password='" & passwordsignup.Text & "' where id = '" & currentId & "'", connection)
+                                    email='" & emailsignup.Text & "' where id = '" & currentId & "'", connection)
 
         Try
             Adapter.Fill(ds, "tbl_customers")

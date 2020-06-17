@@ -43,17 +43,20 @@ Partial Class CustomerPicker
         '
         'confirm
         '
+        Me.confirm.BackColor = System.Drawing.Color.LightBlue
+        Me.confirm.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.confirm.Location = New System.Drawing.Point(13, 338)
         Me.confirm.Name = "confirm"
-        Me.confirm.Size = New System.Drawing.Size(146, 57)
+        Me.confirm.Size = New System.Drawing.Size(668, 57)
         Me.confirm.TabIndex = 1
         Me.confirm.Text = "OK"
-        Me.confirm.UseVisualStyleBackColor = True
+        Me.confirm.UseVisualStyleBackColor = False
         '
         'CustomerPicker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Azure
         Me.ClientSize = New System.Drawing.Size(698, 407)
         Me.Controls.Add(Me.confirm)
         Me.Controls.Add(Me.PickerGrid)

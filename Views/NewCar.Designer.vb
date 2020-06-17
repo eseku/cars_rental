@@ -23,6 +23,10 @@ Partial Class NewCar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.cpd = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.bodytypecombo = New System.Windows.Forms.ComboBox()
         Me.deletecar = New System.Windows.Forms.Button()
         Me.editcar = New System.Windows.Forms.Button()
         Me.CarDataGridView = New System.Windows.Forms.DataGridView()
@@ -41,10 +45,6 @@ Partial Class NewCar
         Me.makeinput = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.bodytypecombo = New System.Windows.Forms.ComboBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.cpd = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.CarDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -78,25 +78,65 @@ Partial Class NewCar
         Me.Panel1.Size = New System.Drawing.Size(1374, 633)
         Me.Panel1.TabIndex = 1
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(74, 441)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(149, 30)
+        Me.Label9.TabIndex = 25
+        Me.Label9.Text = "Cost Per Day"
+        '
+        'cpd
+        '
+        Me.cpd.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cpd.Location = New System.Drawing.Point(244, 434)
+        Me.cpd.Name = "cpd"
+        Me.cpd.Size = New System.Drawing.Size(227, 37)
+        Me.cpd.TabIndex = 24
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(106, 381)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(126, 30)
+        Me.Label6.TabIndex = 23
+        Me.Label6.Text = "Body Type"
+        '
+        'bodytypecombo
+        '
+        Me.bodytypecombo.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bodytypecombo.FormattingEnabled = True
+        Me.bodytypecombo.Items.AddRange(New Object() {"COUPE", "SEDAN", "HATCHKACK", "CONVERTIBLE", "WAGON", "SUV"})
+        Me.bodytypecombo.Location = New System.Drawing.Point(244, 378)
+        Me.bodytypecombo.Name = "bodytypecombo"
+        Me.bodytypecombo.Size = New System.Drawing.Size(227, 38)
+        Me.bodytypecombo.TabIndex = 22
+        '
         'deletecar
         '
+        Me.deletecar.BackColor = System.Drawing.Color.LightBlue
         Me.deletecar.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.deletecar.Location = New System.Drawing.Point(244, 562)
         Me.deletecar.Name = "deletecar"
         Me.deletecar.Size = New System.Drawing.Size(227, 48)
         Me.deletecar.TabIndex = 21
         Me.deletecar.Text = "Delete"
-        Me.deletecar.UseVisualStyleBackColor = True
+        Me.deletecar.UseVisualStyleBackColor = False
         '
         'editcar
         '
+        Me.editcar.BackColor = System.Drawing.Color.LightBlue
         Me.editcar.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.editcar.Location = New System.Drawing.Point(244, 496)
         Me.editcar.Name = "editcar"
         Me.editcar.Size = New System.Drawing.Size(227, 48)
         Me.editcar.TabIndex = 20
         Me.editcar.Text = "Edit"
-        Me.editcar.UseVisualStyleBackColor = True
+        Me.editcar.UseVisualStyleBackColor = False
         '
         'CarDataGridView
         '
@@ -115,23 +155,25 @@ Partial Class NewCar
         '
         'updatecar
         '
+        Me.updatecar.BackColor = System.Drawing.Color.LightBlue
         Me.updatecar.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updatecar.Location = New System.Drawing.Point(24, 562)
         Me.updatecar.Name = "updatecar"
         Me.updatecar.Size = New System.Drawing.Size(208, 48)
         Me.updatecar.TabIndex = 18
         Me.updatecar.Text = "Update"
-        Me.updatecar.UseVisualStyleBackColor = True
+        Me.updatecar.UseVisualStyleBackColor = False
         '
         'addcar
         '
+        Me.addcar.BackColor = System.Drawing.Color.LightBlue
         Me.addcar.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addcar.Location = New System.Drawing.Point(24, 496)
         Me.addcar.Name = "addcar"
         Me.addcar.Size = New System.Drawing.Size(208, 48)
         Me.addcar.TabIndex = 17
         Me.addcar.Text = "Add "
-        Me.addcar.UseVisualStyleBackColor = True
+        Me.addcar.UseVisualStyleBackColor = False
         '
         'Label8
         '
@@ -255,48 +297,11 @@ Partial Class NewCar
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Add Car"
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(106, 381)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(126, 30)
-        Me.Label6.TabIndex = 23
-        Me.Label6.Text = "Body Type"
-        '
-        'bodytypecombo
-        '
-        Me.bodytypecombo.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bodytypecombo.FormattingEnabled = True
-        Me.bodytypecombo.Items.AddRange(New Object() {"COUPE", "SEDAN", "HATCHKACK", "CONVERTIBLE", "WAGON", "SUV"})
-        Me.bodytypecombo.Location = New System.Drawing.Point(244, 378)
-        Me.bodytypecombo.Name = "bodytypecombo"
-        Me.bodytypecombo.Size = New System.Drawing.Size(227, 38)
-        Me.bodytypecombo.TabIndex = 22
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(74, 441)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(149, 30)
-        Me.Label9.TabIndex = 25
-        Me.Label9.Text = "Cost Per Day"
-        '
-        'cpd
-        '
-        Me.cpd.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cpd.Location = New System.Drawing.Point(244, 434)
-        Me.cpd.Name = "cpd"
-        Me.cpd.Size = New System.Drawing.Size(227, 37)
-        Me.cpd.TabIndex = 24
-        '
         'NewCar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Azure
         Me.ClientSize = New System.Drawing.Size(1398, 657)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "NewCar"

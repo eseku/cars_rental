@@ -29,12 +29,13 @@ Partial Class CarPicker
         '
         'confirm
         '
+        Me.confirm.BackColor = System.Drawing.Color.LightBlue
         Me.confirm.Location = New System.Drawing.Point(16, 341)
         Me.confirm.Name = "confirm"
-        Me.confirm.Size = New System.Drawing.Size(146, 57)
+        Me.confirm.Size = New System.Drawing.Size(668, 57)
         Me.confirm.TabIndex = 3
         Me.confirm.Text = "OK"
-        Me.confirm.UseVisualStyleBackColor = True
+        Me.confirm.UseVisualStyleBackColor = False
         '
         'PickerGrid
         '
@@ -55,6 +56,7 @@ Partial Class CarPicker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Azure
         Me.ClientSize = New System.Drawing.Size(700, 408)
         Me.Controls.Add(Me.confirm)
         Me.Controls.Add(Me.PickerGrid)

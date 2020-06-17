@@ -18,7 +18,5 @@
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
         Me.Hide()
-        Signup.Show()
-
     End Sub
 End Class

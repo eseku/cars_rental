@@ -152,12 +152,6 @@
     <Compile Include="Views\Rentals.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Signup.Designer.vb">
-      <DependentUpon>Signup.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Signup.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -189,9 +183,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Rentals.resx">
       <DependentUpon>Rentals.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Signup.resx">
-      <DependentUpon>Signup.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

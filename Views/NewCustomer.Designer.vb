@@ -23,10 +23,8 @@ Partial Class NewCustomer
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.addcustomer = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.passwordsignup = New System.Windows.Forms.TextBox()
         Me.emailsignup = New System.Windows.Forms.TextBox()
         Me.lastnamesignup = New System.Windows.Forms.TextBox()
         Me.firstnamesignup = New System.Windows.Forms.TextBox()
@@ -41,23 +39,14 @@ Partial Class NewCustomer
         '
         'addcustomer
         '
+        Me.addcustomer.BackColor = System.Drawing.Color.PowderBlue
         Me.addcustomer.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addcustomer.Location = New System.Drawing.Point(22, 383)
         Me.addcustomer.Name = "addcustomer"
-        Me.addcustomer.Size = New System.Drawing.Size(169, 53)
+        Me.addcustomer.Size = New System.Drawing.Size(183, 53)
         Me.addcustomer.TabIndex = 33
         Me.addcustomer.Text = "Add"
-        Me.addcustomer.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(71, 298)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(111, 30)
-        Me.Label5.TabIndex = 29
-        Me.Label5.Text = "Password"
+        Me.addcustomer.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -78,15 +67,6 @@ Partial Class NewCustomer
         Me.Label3.Size = New System.Drawing.Size(125, 30)
         Me.Label3.TabIndex = 27
         Me.Label3.Text = "Last Name"
-        '
-        'passwordsignup
-        '
-        Me.passwordsignup.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.passwordsignup.Location = New System.Drawing.Point(210, 298)
-        Me.passwordsignup.Name = "passwordsignup"
-        Me.passwordsignup.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.passwordsignup.Size = New System.Drawing.Size(227, 37)
-        Me.passwordsignup.TabIndex = 23
         '
         'emailsignup
         '
@@ -134,13 +114,14 @@ Partial Class NewCustomer
         '
         'updatecustomer
         '
+        Me.updatecustomer.BackColor = System.Drawing.Color.PowderBlue
         Me.updatecustomer.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updatecustomer.Location = New System.Drawing.Point(22, 465)
         Me.updatecustomer.Name = "updatecustomer"
-        Me.updatecustomer.Size = New System.Drawing.Size(169, 51)
+        Me.updatecustomer.Size = New System.Drawing.Size(183, 51)
         Me.updatecustomer.TabIndex = 34
         Me.updatecustomer.Text = "Update"
-        Me.updatecustomer.UseVisualStyleBackColor = True
+        Me.updatecustomer.UseVisualStyleBackColor = False
         '
         'CustomerDataGrid
         '
@@ -159,23 +140,25 @@ Partial Class NewCustomer
         '
         'editcustomer
         '
+        Me.editcustomer.BackColor = System.Drawing.Color.PowderBlue
         Me.editcustomer.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.editcustomer.Location = New System.Drawing.Point(250, 383)
+        Me.editcustomer.Location = New System.Drawing.Point(226, 383)
         Me.editcustomer.Name = "editcustomer"
-        Me.editcustomer.Size = New System.Drawing.Size(187, 53)
+        Me.editcustomer.Size = New System.Drawing.Size(211, 53)
         Me.editcustomer.TabIndex = 36
         Me.editcustomer.Text = "Edit"
-        Me.editcustomer.UseVisualStyleBackColor = True
+        Me.editcustomer.UseVisualStyleBackColor = False
         '
         'deletecustomer
         '
+        Me.deletecustomer.BackColor = System.Drawing.Color.PowderBlue
         Me.deletecustomer.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.deletecustomer.Location = New System.Drawing.Point(250, 465)
+        Me.deletecustomer.Location = New System.Drawing.Point(226, 465)
         Me.deletecustomer.Name = "deletecustomer"
-        Me.deletecustomer.Size = New System.Drawing.Size(187, 51)
+        Me.deletecustomer.Size = New System.Drawing.Size(211, 51)
         Me.deletecustomer.TabIndex = 37
         Me.deletecustomer.Text = "Delete"
-        Me.deletecustomer.UseVisualStyleBackColor = True
+        Me.deletecustomer.UseVisualStyleBackColor = False
         '
         'NewCustomer
         '
@@ -188,10 +171,8 @@ Partial Class NewCustomer
         Me.Controls.Add(Me.CustomerDataGrid)
         Me.Controls.Add(Me.updatecustomer)
         Me.Controls.Add(Me.addcustomer)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.passwordsignup)
         Me.Controls.Add(Me.emailsignup)
         Me.Controls.Add(Me.lastnamesignup)
         Me.Controls.Add(Me.firstnamesignup)
@@ -206,10 +187,8 @@ Partial Class NewCustomer
     End Sub
 
     Friend WithEvents addcustomer As Button
-    Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents passwordsignup As TextBox
     Friend WithEvents emailsignup As TextBox
     Friend WithEvents lastnamesignup As TextBox
     Friend WithEvents firstnamesignup As TextBox
