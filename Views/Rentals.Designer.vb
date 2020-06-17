@@ -1,0 +1,276 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Rentals
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.RentDataGrid = New System.Windows.Forms.DataGridView()
+        Me.issuedatepicker = New System.Windows.Forms.DateTimePicker()
+        Me.returndatepicker = New System.Windows.Forms.DateTimePicker()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.returned = New System.Windows.Forms.CheckBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.duedatepicker = New System.Windows.Forms.DateTimePicker()
+        Me.customer = New System.Windows.Forms.TextBox()
+        Me.car = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.addrental = New System.Windows.Forms.Button()
+        Me.updaterental = New System.Windows.Forms.Button()
+        Me.editrental = New System.Windows.Forms.Button()
+        Me.deleterental = New System.Windows.Forms.Button()
+        Me.Panel1.SuspendLayout()
+        CType(Me.RentDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.deleterental)
+        Me.Panel1.Controls.Add(Me.editrental)
+        Me.Panel1.Controls.Add(Me.updaterental)
+        Me.Panel1.Controls.Add(Me.addrental)
+        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.car)
+        Me.Panel1.Controls.Add(Me.customer)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.duedatepicker)
+        Me.Panel1.Controls.Add(Me.returned)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.returndatepicker)
+        Me.Panel1.Controls.Add(Me.issuedatepicker)
+        Me.Panel1.Controls.Add(Me.RentDataGrid)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(13, 13)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1483, 645)
+        Me.Panel1.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(29, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(0, 30)
+        Me.Label1.TabIndex = 0
+        '
+        'RentDataGrid
+        '
+        Me.RentDataGrid.AllowUserToAddRows = False
+        Me.RentDataGrid.AllowUserToDeleteRows = False
+        Me.RentDataGrid.AllowUserToOrderColumns = True
+        Me.RentDataGrid.BackgroundColor = System.Drawing.Color.AliceBlue
+        Me.RentDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.RentDataGrid.Location = New System.Drawing.Point(596, 24)
+        Me.RentDataGrid.Name = "RentDataGrid"
+        Me.RentDataGrid.ReadOnly = True
+        Me.RentDataGrid.RowHeadersWidth = 51
+        Me.RentDataGrid.RowTemplate.Height = 24
+        Me.RentDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.RentDataGrid.Size = New System.Drawing.Size(865, 599)
+        Me.RentDataGrid.TabIndex = 1
+        '
+        'issuedatepicker
+        '
+        Me.issuedatepicker.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.issuedatepicker.Location = New System.Drawing.Point(212, 33)
+        Me.issuedatepicker.Name = "issuedatepicker"
+        Me.issuedatepicker.Size = New System.Drawing.Size(354, 37)
+        Me.issuedatepicker.TabIndex = 2
+        '
+        'returndatepicker
+        '
+        Me.returndatepicker.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.returndatepicker.Location = New System.Drawing.Point(212, 95)
+        Me.returndatepicker.Name = "returndatepicker"
+        Me.returndatepicker.Size = New System.Drawing.Size(354, 37)
+        Me.returndatepicker.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(71, 40)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(123, 30)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Issue Date"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(52, 100)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(141, 30)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Return Date"
+        '
+        'returned
+        '
+        Me.returned.AutoSize = True
+        Me.returned.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.returned.Location = New System.Drawing.Point(212, 342)
+        Me.returned.Name = "returned"
+        Me.returned.Size = New System.Drawing.Size(133, 34)
+        Me.returned.TabIndex = 6
+        Me.returned.Text = "Returned"
+        Me.returned.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(79, 160)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(114, 30)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "Due Date"
+        '
+        'duedatepicker
+        '
+        Me.duedatepicker.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.duedatepicker.Location = New System.Drawing.Point(212, 155)
+        Me.duedatepicker.Name = "duedatepicker"
+        Me.duedatepicker.Size = New System.Drawing.Size(354, 37)
+        Me.duedatepicker.TabIndex = 7
+        '
+        'customer
+        '
+        Me.customer.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.customer.Location = New System.Drawing.Point(212, 220)
+        Me.customer.Name = "customer"
+        Me.customer.ReadOnly = True
+        Me.customer.Size = New System.Drawing.Size(354, 37)
+        Me.customer.TabIndex = 9
+        '
+        'car
+        '
+        Me.car.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.car.Location = New System.Drawing.Point(212, 273)
+        Me.car.Name = "car"
+        Me.car.ReadOnly = True
+        Me.car.Size = New System.Drawing.Size(354, 37)
+        Me.car.TabIndex = 10
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(15, 218)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(178, 38)
+        Me.Button1.TabIndex = 11
+        Me.Button1.Text = "Pick Customer"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(15, 272)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(179, 38)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "Pick Car"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'addrental
+        '
+        Me.addrental.BackColor = System.Drawing.Color.AliceBlue
+        Me.addrental.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addrental.Location = New System.Drawing.Point(34, 403)
+        Me.addrental.Name = "addrental"
+        Me.addrental.Size = New System.Drawing.Size(240, 48)
+        Me.addrental.TabIndex = 13
+        Me.addrental.Text = "Add"
+        Me.addrental.UseVisualStyleBackColor = False
+        '
+        'updaterental
+        '
+        Me.updaterental.BackColor = System.Drawing.Color.AliceBlue
+        Me.updaterental.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updaterental.Location = New System.Drawing.Point(34, 504)
+        Me.updaterental.Name = "updaterental"
+        Me.updaterental.Size = New System.Drawing.Size(240, 48)
+        Me.updaterental.TabIndex = 14
+        Me.updaterental.Text = "Update"
+        Me.updaterental.UseVisualStyleBackColor = False
+        '
+        'editrental
+        '
+        Me.editrental.BackColor = System.Drawing.Color.AliceBlue
+        Me.editrental.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.editrental.Location = New System.Drawing.Point(336, 403)
+        Me.editrental.Name = "editrental"
+        Me.editrental.Size = New System.Drawing.Size(230, 48)
+        Me.editrental.TabIndex = 15
+        Me.editrental.Text = "Edit"
+        Me.editrental.UseVisualStyleBackColor = False
+        '
+        'deleterental
+        '
+        Me.deleterental.BackColor = System.Drawing.Color.AliceBlue
+        Me.deleterental.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.deleterental.Location = New System.Drawing.Point(336, 504)
+        Me.deleterental.Name = "deleterental"
+        Me.deleterental.Size = New System.Drawing.Size(230, 48)
+        Me.deleterental.TabIndex = 16
+        Me.deleterental.Text = "Delete"
+        Me.deleterental.UseVisualStyleBackColor = False
+        '
+        'Rentals
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1508, 670)
+        Me.Controls.Add(Me.Panel1)
+        Me.Name = "Rentals"
+        Me.Text = "Rentals"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.RentDataGrid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
+    End Sub
+
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents RentDataGrid As DataGridView
+    Friend WithEvents Label1 As Label
+    Friend WithEvents returned As CheckBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents returndatepicker As DateTimePicker
+    Friend WithEvents issuedatepicker As DateTimePicker
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents car As TextBox
+    Friend WithEvents customer As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents duedatepicker As DateTimePicker
+    Friend WithEvents deleterental As Button
+    Friend WithEvents editrental As Button
+    Friend WithEvents updaterental As Button
+    Friend WithEvents addrental As Button
+End Class
